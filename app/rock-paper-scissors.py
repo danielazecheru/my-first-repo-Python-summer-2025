@@ -6,7 +6,9 @@ player_choice = input("Please select an option from ('rock', 'paper', 'scissors'
 
 import random
 
-computer_choice = random.choice("rock", "paper", "scissors")
+choice=["rock", "paper", "scissors"]
+
+computer_choice = random.choice(choice)
 
 print("Computer choice:", computer_choice)
 
