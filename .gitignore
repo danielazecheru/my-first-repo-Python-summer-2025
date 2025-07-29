@@ -1,0 +1,9 @@
+# the .gitignore file 
+# specifies the names of other files 
+# that we do not want to track in version control
+
+# clutter files / cached files
+
+__pycache__
+
+# secret credentials
