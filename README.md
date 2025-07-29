@@ -15,6 +15,23 @@ Here is a list:
 
 For more information about Markdown syntax, see the [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/).
 
+## Setup
+
+Create an activate a virtual enviornment:
+
+```sh
+conda create -n my-first-env-2025 python=3.11
+
+conda activate my-first-env-2025
+```
+
+```sh
+pip install pytest
+```
+
+```sh
+pip install -r requirements.txt
+```
 
 ## Usage
 
@@ -22,11 +39,18 @@ Play a game of rock, paper, scissors:
 
 # only work if this file does NOT import from other local py files
 ```sh 
-python app/rock-paper-scissors.py
+python app/rps.py
 ```
 
 # if this file imports from other local py files
 ```sh
-python -m app.rock-paper-scissors
+python -m app.rps
 ```
 
+## Tests 
+
+Run the tests: 
+
+```sh
+pytest
+```
