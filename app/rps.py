@@ -1,16 +1,8 @@
 # This is my rock paper scissors game 
 
-print("Welcome to my game!")
-
-player_choice = input("Please select an option from ('rock', 'paper', 'scissors'):")
-
 import random
 
 choice=["rock", "paper", "scissors"]
-
-computer_choice = random.choice(choice)
-
-print("Computer choice:", computer_choice)
 
 def determine_winner(player_choice, computer_choice):
     if player_choice=='rock' and computer_choice=='paper':
@@ -29,4 +21,14 @@ def determine_winner(player_choice, computer_choice):
         result = "TIE"
     return result
 
-print(determine_winner(player_choice, computer_choice))
+# this weird conditional allows us to only run these commands from the command line
+
+if __name__== "__main__":
+
+    print("Welcome to my game!")
+
+    player_choice = input("Please select an option from ('rock', 'paper', 'scissors'): ")
+    computer_choice = random.choice(choice)
+    print("Computer choice:", computer_choice)
+
+    print(determine_winner(player_choice, computer_choice))
