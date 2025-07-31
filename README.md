@@ -42,7 +42,7 @@ Play a game of rock, paper, scissors:
 python app/rps.py
 ```
 
-#### if this file imports from other local py files
+### if this file imports from other local py files
 ```sh
 python -m app.rps
 ```
