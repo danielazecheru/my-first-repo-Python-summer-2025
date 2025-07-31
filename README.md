@@ -37,12 +37,12 @@ pip install -r requirements.txt
 
 Play a game of rock, paper, scissors:
 
-# only work if this file does NOT import from other local py files
+### only work if this file does NOT import from other local py files
 ```sh 
 python app/rps.py
 ```
 
-# if this file imports from other local py files
+#### if this file imports from other local py files
 ```sh
 python -m app.rps
 ```
