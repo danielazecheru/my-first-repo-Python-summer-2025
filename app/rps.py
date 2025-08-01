@@ -21,6 +21,9 @@ def determine_winner(player_choice, computer_choice):
         result = "TIE"
     return result
 
+def generate_random_choice():
+        return random.choice(choice)
+
 # this weird conditional allows us to only run these commands from the command line
 
 if __name__== "__main__":
@@ -28,7 +31,9 @@ if __name__== "__main__":
     print("Welcome to my game!")
 
     player_choice = input("Please select an option from ('rock', 'paper', 'scissors'): ")
-    computer_choice = random.choice(choice)
+    
+    computer_choice = generate_random_choice()
+    
     print("Computer choice:", computer_choice)
 
     print(determine_winner(player_choice, computer_choice))
